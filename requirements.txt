@@ -1,0 +1,6 @@
+opencv-python
+mediapipe
+dlib
+matplotlib
+deepface
+streamlit
