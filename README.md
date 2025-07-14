@@ -39,7 +39,9 @@ eyespy-io/
 ├── .gitignore
 └── README.md
 
-⚙️ How to Run
+---
+
+## ⚙️ How to Run
 
 1️⃣ Create virtual environment and activate:
 
@@ -62,7 +64,9 @@ python app/loyalty_test.py
 # Run Streamlit App
 streamlit run app/streamlit_app.py
 
-📊 Use Cases
+---
+
+## 📊 Use Cases
 
 Loyalty tests (Who catches your eye more?)
 Gaze heatmap for attention analysis
