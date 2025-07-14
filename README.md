@@ -1,59 +1,33 @@
-# 👁️ EyeSpy.io - Loyalty Test Mode
+# EyeSpy.io 
 
-A fun, lightweight gaze-tracking app built with **Streamlit** and **OpenCV** to test where your attention goes during conversations — are you more loyal to Person A or Person B? 😉
+**Your eyes can't lie.**  
+EyeSpy.io is a gaze tracking tool that reveals where your attention really goes. Whether it's testing loyalty, analyzing focus, or visualizing subconscious attention, your gaze tells the truth.
 
 ---
 
 ## 🚀 Features
-- Live webcam gaze tracking (via `mediapipe`)
-- Generates a heatmap of your eye movement
-- Analyzes left vs. right attention bias
-- Downloadable gaze heatmap image
-- Fast, lightweight, and runs locally
+- Real-time gaze tracking via webcam
+- Heatmap visualization of gaze points
+- Loyalty Test Mode (Left vs. Right attention analysis)
+- Emotion detection using FER
+- Streamlit interface with interactive heatmaps
+- Downloadable visual reports
 
 ---
 
 ## 🛠️ Tech Stack
 - Python 3.11
-- Streamlit
 - OpenCV
-- MediaPipe
+- MediaPipe (Face Mesh)
+- FER (Facial Emotion Recognition)
 - Matplotlib
+- Streamlit
 - NumPy
-- FER
-
----
-
-## ⚙️ Steps to Run
-
-### 1️⃣ Create virtual environment and activate:
-\`\`\`bash
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-# .\venv\Scripts\activate  # Windows
-\`\`\`
-
-### 2️⃣ Install dependencies:
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-
-### 3️⃣ Run your files:
-\`\`\`bash
-# Run Gaze Tracker (ESC to exit)
-python app/gaze_tracker.py
-
-# Run Loyalty Test (Emotion Detection)
-python app/loyalty_test.py
-
-# Run Streamlit App
-streamlit run app/streamlit_app.py
-\`\`\`
 
 ---
 
 ## 📂 Project Structure
-\`\`\`bash
+```plaintext
 eyespy-io/
 ├── app/
 │   ├── gaze_tracker.py
@@ -64,10 +38,33 @@ eyespy-io/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-\`\`\`
 
----
+⚙️ How to Run
 
-## 📝 License
-MIT License
-EOF
+1️⃣ Create virtual environment and activate:
+
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+# .\venv\Scripts\activate  # Windows
+
+2️⃣ Install dependencies:
+
+pip install -r requirements.txt
+
+3️⃣ Run your files:
+
+# Run Gaze Tracker (ESC to exit)
+python app/gaze_tracker.py
+
+# Run Loyalty Test (Emotion Detection)
+python app/loyalty_test.py
+
+# Run Streamlit App
+streamlit run app/streamlit_app.py
+
+📊 Use Cases
+
+Loyalty tests (Who catches your eye more?)
+Gaze heatmap for attention analysis
+Fun social challenges
+Psychology & UX research demos
