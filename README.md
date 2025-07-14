@@ -1,53 +1,73 @@
-# eyespy-io
-AI-powered gaze tracking to reveal where your attention really goes - loyalty tests, heatmaps, and subconscious focus detection in real-time.
+# 👁️ EyeSpy.io - Loyalty Test Mode
 
-**Your eyes can't lie.**  
-**EyeSpy.io** is an AI-powered gaze tracking tool that reveals where your attention really goes. Whether it's testing loyalty, analyzing focus, or exposing subconscious attraction, your gaze tells the truth.
+A fun, lightweight gaze-tracking app built with **Streamlit** and **OpenCV** to test where your attention goes during conversations — are you more loyal to Person A or Person B? 😉
 
 ---
 
 ## 🚀 Features
-- Real-time eye and gaze tracking
-- Gaze heatmap visualization
-- Loyalty Test Mode (Who catches your eye most?)
-- Emotion detection while gazing
-- Visual reports and attention analytics
+- Live webcam gaze tracking (via `mediapipe`)
+- Generates a heatmap of your eye movement
+- Analyzes left vs. right attention bias
+- Downloadable gaze heatmap image
+- Fast, lightweight, and runs locally
 
 ---
 
 ## 🛠️ Tech Stack
-- Python 3.x
+- Python 3.11
+- Streamlit
 - OpenCV
-- MediaPipe / Dlib for eye tracking
-- YOLOv5 (optional) for object detection
-- DeepFace or FER for emotion detection
-- Matplotlib / OpenCV for heatmaps
-- Streamlit / Gradio for demo interface
-
+- MediaPipe
+- Matplotlib
+- NumPy
+- FER
 
 ---
 
-## 📊 Use Cases
-- Loyalty tests (Who catches your eye more?)
-- Subconscious attention analysis (food, faces, design)
-- UX / marketing focus studies
-- Psychology & AI research demos
-- Fun social challenges
+## ⚙️ Steps to Run
+
+### 1️⃣ Create virtual environment and activate:
+\`\`\`bash
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+# .\venv\Scripts\activate  # Windows
+\`\`\`
+
+### 2️⃣ Install dependencies:
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+### 3️⃣ Run your files:
+\`\`\`bash
+# Run Gaze Tracker (ESC to exit)
+python app/gaze_tracker.py
+
+# Run Loyalty Test (Emotion Detection)
+python app/loyalty_test.py
+
+# Run Streamlit App
+streamlit run app/streamlit_app.py
+\`\`\`
 
 ---
 
-## 🎯 Project Goal
-To build a lightweight, viral-ready demo that highlights how our gaze reveals subconscious preferences and attention patterns in a playful yet insightful way.
+## 📂 Project Structure
+\`\`\`bash
+eyespy-io/
+├── app/
+│   ├── gaze_tracker.py
+│   ├── loyalty_test.py
+│   ├── streamlit_app.py
+├── assets/
+│   └── gaze_heatmap.png
+├── requirements.txt
+├── .gitignore
+└── README.md
+\`\`\`
 
 ---
 
-## 🔥 Example Scenarios
-- "Does your boyfriend look at you... or her?" Loyalty challenge.
-- "We tracked our friends’ gaze for 1 minute — the results were surprising."
-- "What does your gaze reveal about your true preferences?"
-
----
-
-## 📃 License
+## 📝 License
 MIT License
-
+EOF
